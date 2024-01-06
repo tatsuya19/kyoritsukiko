@@ -3,10 +3,88 @@ html {
     width: 100%;
   }
 
-
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
   a{
     text-decoration: none;
+}
+
+
+
+button{
+    width: 240px;
+    border: 1px solid #47A62D;
+    border-radius: 9999px;
+    position: relative;
+}
+ 
+button a{
+    padding: 24px;
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+
+.button-arrow{
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: text-top;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 24px;
+}
+.button-arrow::before,
+.button-arrow::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.button-arrow::before{
+	width: 24px;
+	height: 24px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background:none;
+}
+
+
+.button-arrow::after{
+    left: 6px;
+    width: 8px;
+    height: 8px;
+	border-top: 1px solid #47A62D;
+	border-right: 1px solid #47A62D;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.about-btn-area a:visited{
+    color:#47A62D;
+}
+
+
+
+
+
+
+/* 全体 sp */
+@media screen and (max-width:540px) {
+.about-title h2, .news-title h2, .product-title h2, .company-title h2 {
+    font-size: 2.4rem;
+    color: #47A62D;
+}
 }
 
 
@@ -226,7 +304,7 @@ z-index: 100;
     height: auto;
 }
 
-.about-btn{
+.about-btn-area{
     margin-top: 64px;
     text-align: center;
 }
@@ -307,6 +385,10 @@ z-index: 100;
     color: #2DA66A;
 }
 
+.about-title{
+    padding-bottom: 48px;
+}
+
 .about-btn{
     margin-top: 48px;
 }
@@ -324,10 +406,7 @@ z-index: 100;
 
 
 
-.btn{
-    margin: 64px;
-    text-align: center;
-}
+
 
 .product{
     background-color: #EDEDED;
@@ -365,6 +444,17 @@ z-index: 100;
 .news-list li{
     border-bottom:1px solid #a3a3a3;
     margin-top: 16px;
+}
+
+
+.news-btn-area{
+    margin: 64px;
+    text-align: center;
+}
+
+
+.news-btn-area a:valid{
+    color:#47A62D;
 }
 
 
@@ -700,7 +790,8 @@ footer img{
 .footer-category-item{
     display: flex;
     justify-content: space-between;
-    margin: 12px 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #a3a3a3;
 }
 
 .address-title{
@@ -783,7 +874,6 @@ address p{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
     color: #333;
 }
 
@@ -850,6 +940,7 @@ footer small{
 
 /* フッター sp */
     @media screen and (max-width:540px) {
+
     footer {
         background-color: #2DA66A;
         padding: 48px 24px 8px;
@@ -874,11 +965,34 @@ footer small{
     }
 
     .footer-contact {
-        margin-left: 0;
         font-size: 1.2rem;
-        width: 180px;
+        width: 160px;
         padding-bottom: 48px;
         padding-top: 32px;
+        margin: 0 auto;
     }
 
+    a.footer-contact-item {
+        padding: 8px;
+    }
+
+    span.material-symbols-outlined.footer-contact-icon{
+        padding-right: 8px;
+    }
+
+
 }
+
+
+
+/* 全体 sp */
+@media screen and (max-width:540px) {
+    .about-title h2, .news-title h2, .product-title h2, .company-title h2 {
+        font-size: 2.4rem;
+        color: #47A62D;
+    }
+
+
+
+    }
+    
