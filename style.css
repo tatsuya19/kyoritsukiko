@@ -31,7 +31,7 @@ p{
 }
 
 .footer-contact span {
-    color: #47A62D;
+    color: #fff;
 }
 
 
@@ -161,7 +161,7 @@ header{
 
 .header-items li a{
     margin-left: 24px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 88px;
     color:#333;
 }
@@ -800,7 +800,7 @@ justify-content: space-between;
 /* フッター */
 
 footer{
-    background-color: #2DA66A;
+    background-color: #EDEDED;
     padding: 80px 64px 8px;
 }
 
@@ -825,7 +825,7 @@ footer img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 /* .footer-category-item-list a{
@@ -840,8 +840,9 @@ footer img{
 }
 
 .address-title{
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     padding-bottom: 24px;
+    color: #47A62D;
 }
 
 address{
@@ -858,6 +859,12 @@ address p:last-of-type{
     margin: 0;
 
 }
+
+.footer-address
+{
+    margin-bottom: 64px;
+}
+
 
 
 .footer-arrow{
@@ -935,8 +942,8 @@ address p:last-of-type{
 
 
 a.footer-contact-item{
-    color: #2DA66A;
-    background-color: #fff;
+    color: #fff;
+    background-color: #e60012;
     padding: 12px 24px;
     border-radius: 4px;
 }
@@ -965,20 +972,17 @@ footer small{
         flex-wrap: wrap;
     }
 
-    .footer-address{
-        padding-bottom: 64px;
-    }
-    
+
     .footer-contact {
         margin-left:0;
         font-size: 1.2rem;
         width: 180px;
-        padding-bottom: 64px;
+        margin-top: 64px;
     }
 
     a.footer-contact-item {
-        color: #2DA66A;
-        background-color: #fff;
+        /* color: #2DA66A;
+        background-color: #fff; */
         padding: 12px 24px;
         border-radius: 4px;
     }
@@ -987,8 +991,7 @@ footer small{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 1.4rem;
-        padding: 0 32px 64px 32px ;
+        padding: 0 32px 0px 32px ;
     }
     }
 
@@ -998,7 +1001,6 @@ footer small{
     @media screen and (max-width:540px) {
 
     footer {
-        background-color: #2DA66A;
         padding: 48px 24px 8px;
     }
 
@@ -1016,7 +1018,6 @@ footer small{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 1.4rem;
         padding: 0;
     }
 
