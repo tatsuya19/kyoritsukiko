@@ -128,7 +128,7 @@ header{
     position: fixed;
     z-index: 1000;
     width: 100%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 
@@ -750,6 +750,31 @@ justify-content: space-between;
     padding-left: 24px;
 }
 
+.product-item-text span:nth-of-type(1){
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: calc(66% - 5px);
+    right: 24px;
+    transform: rotate(30deg);
+    width: 16px;
+    height: 1px;
+    background-color: #333;
+}
+
+.product-item-text span:nth-of-type(2){
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 66%;
+    right: 25px;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 1px;
+    background-color: #333;
+}
+
+
    .product-item:last-child{
     margin-bottom: 80px;;
    }
@@ -761,6 +786,8 @@ justify-content: space-between;
    }
 
 
+
+   
 
 
    /* 製品情報 タブレット */
