@@ -569,6 +569,13 @@ header{
 
 
 @media screen and (max-width:540px) {
+    .top-bg{
+        width: 100vw;     /* 画面幅いっぱい */
+        height: calc(100vh - 44px);    /* 画面高さいっぱい */
+        position: relative;
+        overflow: hidden;
+      }
+
     .top-text{
     
         font-size: 1.2rem;
