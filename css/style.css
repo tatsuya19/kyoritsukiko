@@ -77,7 +77,7 @@ button a{
     /*描画位置*/
 	position: absolute;
 	left:-20px;
-	bottom:10px;
+	bottom:60px;
     /*テキストの形状*/
 	color: #fff;
 	font-size: 1.6rem;
@@ -92,7 +92,7 @@ button a{
     content: "";
     /*描画位置*/
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     right: -6px;
     /*矢印の形状*/
     width: 1px;
@@ -105,7 +105,7 @@ button a{
 	content:"";
     /*描画位置*/
 	position: absolute;
-	bottom:0;
+	bottom:40px;
 	right:0;
     /*矢印の形状*/
 	width:1px;
