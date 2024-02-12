@@ -987,7 +987,7 @@ justify-content: space-between;
 
     .product-item {
         margin-bottom: 48px;
-        width: 70%;
+        width: 100%;
         aspect-ratio: 3/2;
         /* background-color: aqua; */
         position: relative;
